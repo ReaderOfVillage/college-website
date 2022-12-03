@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.App {
+  margin-left: 18rem;
+  margin-right: 18rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.downloadBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 1rem;
+  background:rgb(230, 220, 220);
+  margin: 10px;
+  border-radius: 13px;
+}
+
+.downloadBtn {
+  width: 90px;
+  height: 30px;
+  border-radius: 1rem;
+  border: 1px solid silver;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.downloadBtn:hover {
+  background-color: rgb(107, 106, 106);
+  color: white;
+}
+
+.powerplogo {
+  width: 50px;
+}
+
+.titleAndLogo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.absent {
+  display: flex;
+  gap: 2rem;
+}
+
+.downloadLink {
+  margin-top: 4px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+
+  transition: all 0.3s;
+}
+
+.downloadLink:hover { 
+  color: white;
+}
+
+@media (min-width: 410px) and (max-width: 600px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .powerplogo {
+    width: 30px;
+  }
+
+  .downloadBtn {
+    font-size: 11px;
+    width: 60px;
+    height: 20px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+    cursor: pointer;
+  
+    transition: all 0.3s;
+    transform: translateX(-30px);
+  }
+
+  nav {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 2rem;
+  }
+  
+  .App {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  .downloadBtn {
+    font-size: 20px;
+    width: 110px;
+    height: 40px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+    cursor: pointer;
+  
+    transition: all 0.3s;
+    transform: translateX(-30px);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .powerplogo {
+    width: 30px;
+  }
+
+  .downloadBtn {
+    font-size: 11px;
+    width: 60px;
+    height: 20px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+    cursor: pointer;
+  
+    transition: all 0.3s;
+    transform: translateX(-30px);
+  }
+
+  nav {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 2rem;
+  }
+  
+  .App {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 409px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .downloadBtn {
+    font-size: 11px;
+    width: 80px;
+    height: 30px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+    cursor: pointer;
+  
+    transition: all 0.3s;
+    transform: translateX(-40px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 769px) {
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titleAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .App {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .downloadBtn {
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+    cursor: pointer;
+  
+    transition: all 0.3s;
+    transform: translateX();
+  }
+}
+
