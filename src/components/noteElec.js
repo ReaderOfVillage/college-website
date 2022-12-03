@@ -5,7 +5,7 @@ const ElecNote = ({ lesson, link }) => {
   return (
     <div className="downloadBlock">
       <div className="titleAndLogo">
-        <img className="powerPlogo" src={PowerPointImg} />
+        <img className="powerplogo" src={PowerPointImg} />
         <div>{`Электроника Урок ${lesson}`}</div>
       </div>
       <a className="downloadLink" href={link || "#"}><button className="downloadBtn">download</button></a>
